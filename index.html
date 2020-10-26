@@ -2,11 +2,18 @@
 <html lang="en">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M73326CZN2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-M73326CZN2');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=5">
   <meta property="og:site_name" content="PowerED">
   <meta property="og:type" content="website">
   <meta property="og:title" content="PowerED 2020 – Cyfrowe zasoby w&nbsp;wyrównywaniu szans edukacyjnych" />
@@ -122,10 +129,10 @@
             cyfrowych i&nbsp;technologii?</strong> (transmisja na żywo z&nbsp;Elektrowni Powiśle)
 
           <div class="speakers">
-            <div>
+            <!-- <div>
               <img src="./assets/speakers/joanna-berdzik.jpg" alt="">
               <strong>Joanna Berdzik</strong> Stowarzyszenie Dobra Edukacja
-            </div>
+            </div> -->
             <div>
               <img src="./assets/speakers/małgorzata-rabenda.jpg" alt="">
               <strong>Małgorzata Rabenda</strong> Referat Oświaty, Kultury i Sportu, gmina Jasień
@@ -142,6 +149,11 @@
               <img src="./assets/speakers/eliza-durka.jpg" alt="">
               <strong>Eliza Durka-Cieślewska</strong> Fundacja Kosmos dla Dziewczynek
             </div>
+
+            <div>
+              <img src="./assets/speakers/anna-stokowska.jpg" alt="">
+              <strong>Anna Stokowska</strong> Fundacja Katalyst Education / Prowadząca
+            </div>
           </div>
         </div>
 
@@ -149,7 +161,12 @@
 
       <h2 id="transmisje" class="section-headline">Transmisje Live</h2>
 
-      <section class="fb-player fb-player-empty"></section>
+      <section class="fb-player respnsice-iframe">
+        <iframe width=" 1280" height="720"
+          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FPistacjaMatematyka%2Fvideos%2F349332952962953%2F&width=1280"
+          style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+          allowFullScreen="true"></iframe>
+      </section>
 
       <h2 id="warsztaty" class="section-headline">Fokusy eksperckie</h2>
 
@@ -319,7 +336,7 @@
   <div class="lights"></div>
 </body>
 
-<script src="./index.js"></script>
+<script src="./index.js?v=5"></script>
 <script>
   animate();
   toggleMenu();

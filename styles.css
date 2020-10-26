@@ -399,7 +399,7 @@ article > * + * {
   font-size: 0.8em;
   margin-top: 2.5em;
   justify-items: center;
-  grid-template-columns: repeat(3, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
 }
 
 .speakers-1 {
@@ -742,7 +742,26 @@ span.hamburger::after {
 .ratio-16-9 {
   height: 0;
   overflow: hidden;
-  padding-top: 56.25%;  
+  padding-top:
+   56.25%;  
+}
+
+.respnsice-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  border: none;
+}
+
+.respnsice-iframe > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .space-up-2 {
