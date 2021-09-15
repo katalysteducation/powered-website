@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M73326CZN2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-M73326CZN2');
-  </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WZ427XZ');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
@@ -29,18 +32,20 @@
 </head>
 
 <body id="start">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ427XZ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <button id="menu-trigger" class="menu">≡</button>
 
   <nav id="main-menu" class="main-menu">
     <div class="menu-rail">
-      <a href="#start">Start</a>
+      <a href="#start">Rekomendacje</a>
       <button id="close-button" class="close">🞪</button>
     </div>
-    <a href="#program">Program konferencji</a>
+    <a href="#program">Program wydarzenia</a>
     <a href="#transmisje">Zobacz nagranie</a>
-    <a href="#warsztaty">Fokusy eksperckie</a>
     <a href="#newsletter">Bądź na bieżąco</a>
-    <a href="#informacje">Dowiedz się więcej</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
 
@@ -52,7 +57,6 @@
       <div class="text">
         <h1>Power<span style="margin-left: 0.02em;">ED</span></h1>
         <p class="subtitle">Cyfrowe zasoby w&nbsp;wyrównywaniu szans edukacyjnych</p>
-        <p class="note">Poniedziałek 26 października 2020 |transmisja ON-LINE z&nbsp;Elektrowni Powiśle</p>
       </div>
 
       <div class="animate-blobs">
@@ -88,32 +92,39 @@
 
     <article>
 
-      <section class="objectives stack">
-        <div class="well objective panel">
+      <section id="recommendations" class="objectives stack">
+
+        <div class="well panel stack --align-center bg-darken">
+          <div class="rail rail-to-stack --align-center">
+            <img class="idea" src="./assets/idea.svg" alt="idea">
+            <h2>W trakcie wydarzenia PowerED, wspólnie z 40 ekspertami i ekspertkami opracowaliśmy rekomendacje dla
+              samorządów, przedsiębiorców i organizacji pozarządowych, które chcą skutecznie zmieniać sposób działania
+              polskich szkół na bardziej inkluzywny, nowoczesny i sprzyjający rozwojowi wszystkich uczniów.</h2>
+          </div>
+          <div class="rail rail-to-stack">
+            <a href="https://power-ed.pl/dokumenty/Rekomendacje_PowerED_2021.pdf" target="_blank"
+              class="cta button purple recommendations">Pobierz rekomendacje</a>
+            <a href="https://power-ed.pl/dokumenty/PowerED_Jak_przeciwdzialac_wykluczeniom_w_edukacji_infografika.png"
+              target="_blank" class="cta button purple infographic">Pobierz infografikę</a>
+            <a href="https://power-ed.pl/dokumenty/PowerED_presspack.zip" target="_blank"
+              class="cta button purple presspack">Pobierz informację prasową</a>
+          </div>
+        </div>
+
+        <div class="well panel rail rail-to-stack --align-center bg-darken">
           <img class="talk" src="./assets/talk.svg" alt="talk">
           <h2>Inicjujemy debatę na temat roli technologii i&nbsp;zasobów cyfrowych w&nbsp;wyrównywaniu szans
             edukacyjnych.</h2>
         </div>
-
-        <div class="well objective panel">
-          <img class="idea" src="./assets/idea.svg" alt="idea">
-          <h2>Opracowujemy rekomendacje dla samorządów, przedsiębiorców i&nbsp;organizacji pozarządowych,
-            które chciałyby
-            skutecznie wspierać działania edukacyjne zwiększające dostęp dzieci i&nbsp;młodzieży do edukacji wysokiej
-            jakości.</h2>
-        </div>
       </section>
 
 
-      <h2 id="program" class="section-headline">Program konferencji</h2>
+      <h2 id="program" class="section-headline">Program wydarzenia</h2>
 
       <section class="panel stack">
         <div>
-          <span class="time">10:30–11:15</span>
           <strong>Edukacja po lockdownie – czy wiemy więcej o&nbsp;nierównościach w
             dostępie do edukacji? Wnioski z&nbsp;Polski i&nbsp;ze świata.</strong>
-          (transmisja na
-          żywo z&nbsp;Elektrowni Powiśle)
 
           <div class="speakers speakers-1">
             <div>
@@ -124,9 +135,8 @@
 
         </div>
         <div>
-          <span class="time">11:15–13:00</span>
           <strong>Dyskusja panelowa: Jakie nierówności w&nbsp;dostępie do edukacji można zniwelować przy pomocy zasobów
-            cyfrowych i&nbsp;technologii?</strong> (transmisja na żywo z&nbsp;Elektrowni Powiśle)
+            cyfrowych i&nbsp;technologii?</strong>
 
           <div class="speakers">
             <!-- <div>
@@ -161,69 +171,20 @@
 
       <h2 id="transmisje" class="section-headline">Zobacz nagranie</h2>
 
-      <section class="fb-player respnsice-iframe">
-        <iframe width=" 1280" height="720"
+      <section class="fb-player responsive-iframe">
+        <iframe width="1280" height="720"
           src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FPistacjaMatematyka%2Fvideos%2F349332952962953%2F&width=1280"
           style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
           allowFullScreen="true"></iframe>
+
+
       </section>
-
-      <h2 id="warsztaty" class="section-headline">Fokusy eksperckie</h2>
-
-      <div class="well">Spotkania zamknięte w&nbsp;4 grupach tematycznych</div>
-      <section class="grid" style="position: relative;">
-
-        <div class="panel expand-box">
-          <h3>Wykluczenie cyfrowe – zasoby i&nbsp;kompetencje cyfrowe </h3>
-          <div class="expand-box-content">
-            Jak łączyć nauczycieli i&nbsp;uczniów z&nbsp;odpowiednimi programami nauczania (od lekcji uzupełniających po
-            programy
-            korepetycji i&nbsp;mentoringu), które mogą pomóc wyrównać poziom edukacji uczniów niezależnie od ich
-            pochodzenia
-            i&nbsp;miejsca zamieszkania?
-          </div>
-        </div>
-
-        <div class="panel expand-box">
-          <h3>Wykluczenie cyfrowe – nierówności ekonomiczne </h3>
-          <div class="expand-box-content">
-            Jak działać na rzecz wyrównywania szans w&nbsp;dostępie do infrastruktury, zasobów edukacyjnych
-            i&nbsp;kompetentnych
-            nauczycieli dzieciom z&nbsp;regionów słabo rozwiniętych i&nbsp;wykluczonych rodzin?
-          </div>
-        </div>
-
-        <div class="panel expand-box thin">
-          <h3>Relacje i&nbsp;cyfrowy dobrostan </h3>
-          <div class="expand-box-content">
-            Edukacja zdalna i&nbsp;hybrydowa rozluźnia relacje między nauczycielami i&nbsp;uczniami oraz między samymi
-            uczniami.
-            Brak tych relacji był jednym z&nbsp;najbardziej dokuczliwych problemów, na które wskazywali młodzi ludzie
-            podczas
-            pandemii. Miało to wpływ nie tylko na ich samopoczucie, ale także na możliwości uczenia się od rówieśników
-            i
-            rozwijania takich umiejętności jak współpraca i&nbsp;komunikacja. Dotyczy to zwłaszcza tych dzieci, które
-            nie
-            mają możliwości budowania swojego kapitału społecznego poza szkołą. Jak możemy ulepszyć zdalną edukację,
-            aby
-            to zrekompensować?
-          </div>
-        </div>
-        <div class="panel expand-box thin">
-          <h3>Infrastruktura lokalna i&nbsp;centralna</h3>
-          <div class="expand-box-content">
-            Czy obecne inwestycje odpowiadają na zmieniający się charakter wykluczenia edukacyjnego? Jaki rodzaj
-            współpracy między wszystkimi zainteresowanymi stronami może im pomóc być bardziej efektywnymi i
-            dostosowanymi do edukacji hybrydowej oraz zróżnicowanych potrzeb nauczycieli i&nbsp;uczniów?
-          </div>
-        </div>
-      </section>
-
-      <p class="well">
-        Po opracowaniu, redakcji i&nbsp;recenzji rekomendacji, opublikujemy je na stronie www.power-ed.pl oraz roześlemy
-        do
-        wszystkich zainteresowanych instytucji.
-      </p>
+      <div class="no-video">
+        <p>Jeżeli wideo nie załaduje się automatycznie...</p>
+        <a class="button cta"
+          href="https://www.facebook.com/1543210202668130/videos/349332952962953/?__so__=watchlist&__rv__=video_home_www_playlist_video_list"
+          target="blank">Zobacz nagranie na Facebooku</a>
+      </div>
 
 
       <h2 id="newsletter" class="section-headline">Bądź na bieżąco</h2>
@@ -231,71 +192,6 @@
       <section class="panel panel-crop">
         <iframe id='fm-fc-f-jqnyjmw2vq' src='https://forms.freshmail.io/f/o1fpl3jocd/jqnyjmw2vq/index.html'
           frameborder='0' marginheight='0' marginwidth='0' width='100%' style='min-height: 469px'></iframe>
-      </section>
-
-      <h2 id="informacje" class="section-headline">Dowiedz się więcej</h2>
-
-      <section class="stack">
-        <div class="well">Tu możesz znaleźć linki do kilku raportów i&nbsp;artykułów, które opublikowano w&nbsp;związku
-          z&nbsp;obawami
-          wielu
-          instytucji o&nbsp;brak równego dostępu wszystkich polskich uczniów do edukacji.</div>
-
-        <ul class="stack">
-          <li class="panel">Centralny Dom Technologii (2020): <a
-              href="https://blog.cdt.pl/91046-cyfrowe-wykluczenie-w-dobie-kryzysu-edukacyjnego-jak-go-unikac"
-              target="_blank">Cyfrowe wykluczenie w&nbsp;dobie kryzysu
-              edukacyjnego – jak go unikać?</a></li>
-          <li class="panel"><a
-              href="https://wyborcza.pl/Jutronauci/7,165057,26288947,czy-twoje-dziecko-zrozumie-janusza.html?disableRedirects=true"
-              target="_blank">Przez nierówności w&nbsp;publicznej szkole będziemy coraz głupsi i&nbsp;coraz
-              biedniejsi</a> – wywiad z&nbsp;Przemysławem
-            Sadurą na Wyborcza.pl (2020)</li>
-          <li class="panel">Fundacja im. Stefana Batorego (2020):
-            <ul>
-              <li>Marta Zahorska <a
-                  href="https://www.batory.org.pl/wp-content/uploads/2020/09/Sukces-czy-porazka-zdalnego-nauczania.pdf?fbclid=IwAR13y95K5IcgPKC6u3p5LVriJC_QNZ2X-rdSDO29VK0aMCddj9wqcJLuQFA"
-                  target="_blank">Sukces czy porażka zdalnego nauczania?</a></li>
-              <li>Paweł Marczewski <a
-                  href="https://www.batory.org.pl/wp-content/uploads/2020/10/Nierownosci_Edukacja_Komentarz.pdf?fbclid=IwAR0vp_CSNDKYGNQEsAGCBUy01Uwc__g0PF2sIvnUrBbkgbFNQJ_piWbChEE"
-                  target="_blank">Epidemia nierówności w&nbsp;edukacji</a></li>
-            </ul>
-          </li>
-
-          <li class="panel">Apel rzecznika Praw Obywatelskich:
-            <ul>
-              <li>z dn. 15.05.2020: <a
-                  href="https://www.rpo.gov.pl/pl/content/koronawirus-apel-rpo-o-rozwi%C4%85zania-ktore-zapobieglyby-wykluczeniu-uczniow-z-systemu"
-                  target="_blank">Jak zapobiegać wykluczeniu uczniów ze zdalnej
-                  edukacji. Apel RPO do trzech resortów</a>
-              </li>
-              <li>z dn. 8.06.2020: <a
-                  href="https://www.rpo.gov.pl/pl/content/rpo-men-nie-moze-sie-uchylac-od-problemu-wykluczenia-uczniow-ze-zdalnej-edukacji"
-                  target="_blank">MEN nie może się uchylać od problemu wykluczenia
-                  uczniów ze zdalnej edukacji</a></li>
-            </ul>
-          </li>
-
-          <li class="panel">Centrum Cyfrowe (2020):
-            <ul>
-              <li><a href="https://centrumcyfrowe.pl/edukacja-zdalna/" target="_blank">Edukacja zdalna – raport z
-                  badań</a></li>
-              <li><a
-                  href="https://centrumcyfrowe.pl/wp-content/uploads/sites/16/2020/03/Problem-wykluczenia-cyfrowego-w-edukacji-zdalnej-2020.pdf"
-                  target="_blank">Problem wykluczenia cyfrowego w&nbsp;edukacji zdalnej</a></li>
-            </ul>
-          </li>
-
-          <li class="panel">Rozdział "Edukacja dzieci i&nbsp;młodzieży – wybrane wyzwania i&nbsp;obszary nierówności"
-            w&nbsp;raporcie
-            <a href="https://fdds.pl/wp-content/uploads/2019/08/Raport-Dzieci-si%C4%99-licz%C4%85-2017.pdf"
-              target="_blank">"Dzieci się
-              liczą" Fundacji Dajemy dzieciom siłę (2017)</a></li>
-          <li class="panel">UNICEF (2016): <a
-              href="https://dzieciwpolsce.pl/files/publications/Raport-UNICEF-Innocenti13.pdf" target="_blank">Równe
-              szanse dla dzieci Nierówności w&nbsp;zakresie warunków i&nbsp;jakości życia dzieci w&nbsp;krajach
-              bogatych</a></li>
-        </ul>
       </section>
 
       <h2 id="kontakt" class="section-headline">Kontakt</h2>
@@ -309,15 +205,13 @@
       </section>
 
       <section class="well space-up-2">
-        Organizatorem PowerED jest fundacja <a href="http://katalysteducation.org/" target="_blank">Katalyst
+        Organizatorem PowerED była fundacja <a href="http://katalysteducation.org/" target="_blank">Katalyst
           Education</a>, której zespół tworzy darmowe, otwarte, cyfrowe
         narzędzia edukacyjne, m.in. w&nbsp;ramach programu <a href="https://pistacja.tv/" target="_blank">Pi-stacja</a>
         oraz <a href="https://elektrowniapowisle.com/pl/" target="_blank">Elektrownia
           Powiśle</a>.
       </section>
-
     </article>
-
 
     <section class="orgainzators">
 
