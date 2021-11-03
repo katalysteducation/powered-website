@@ -40,6 +40,10 @@
   margin-top: 1.5em !important;
 }
 
+.stack.--small > * + * {
+  margin-top: 0.5em !important;
+}
+
 .rail {
   display: flex;
   flex-direction: row;
@@ -839,11 +843,11 @@ span.hamburger::after {
 
 /* COLORS */
 
-.violet {
+.yellow {
   color: var(--lite-akcent);
 }
 
-.bg-violet {
+.bg-yellow {
   background-color: var(--lite-akcent);
 }
 
@@ -855,11 +859,11 @@ span.hamburger::after {
   background-color: #533f64;
 }
 
-.blue {
+.brown {
   color: var(--dark-akcent);
 }
 
-.bg-blue {
+.bg-brown {
   background-color: var(--dark-akcent);
 }
 
