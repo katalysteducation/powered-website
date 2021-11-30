@@ -117,6 +117,10 @@
   margin-top: 2.5em;
 }
 
+.text-center {
+  text-align: center;
+}
+
 
 body {
   width: 100%;
@@ -323,7 +327,7 @@ article > * + * {
   border-radius: 0.5em;
   background-color: rgba(0,0,0,0.2);
   border: 2px solid rgb(255, 255, 255, 0.5);
-  background-image: url(./assets/anim-blob.svg?v=2);
+  background-image: url(../assets/anim-blob.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -341,14 +345,16 @@ article > * + * {
 }
 
 .fb-player-empty {
+  color: #342f20;
   min-height: 380px;
+  flex-direction: column;
 }
 
 .fb-player-empty::before {
   content: "";
   width: 80px;
   height: 80px;
-  background-image: url(./assets/fb.png);
+  background-image: url(../assets/fb.png);
 }
 
 .no-video {
