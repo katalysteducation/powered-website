@@ -1,0 +1,67 @@
+## Cache Control
+Header set Cache-Control "no-cache"
+Header set Pragma "no-cache"
+
+## Can be commented out if causes errors, see notes above.
+Options +FollowSymlinks
+Options -Indexes
+
+## No directory listings
+IndexIgnore *
+
+###########################################
+# === Optimal default expiration time ===
+
+<IfModule mod_expires.c>
+	# Enable expiration control
+	ExpiresActive On
+
+	# Default expiration: 1 second after request
+	ExpiresDefault "now plus 1 s"
+
+	# CSS and JS expiration: 1 year after request
+	ExpiresByType text/css "now plus 1 year"
+	ExpiresByType application/javascript "now plus 1 year"
+	ExpiresByType application/x-javascript "now plus 1 year"
+  ExpiresByType application/json "now plus 1 year"
+
+	# Image files expiration: 1 year after request
+	ExpiresByType image/bmp "now plus 1 year"
+	ExpiresByType image/gif "now plus 1 year"
+	ExpiresByType image/jpeg "now plus 1 year"
+	ExpiresByType image/jp2 "now plus 1 year"
+	ExpiresByType image/pipeg "now plus 1 year"
+	ExpiresByType image/png "now plus 1 year"
+	ExpiresByType image/svg+xml "now plus 1 year"
+	ExpiresByType image/tiff "now plus 1 year"
+	ExpiresByType image/vnd.microsoft.icon "now plus 1 year"
+	ExpiresByType image/x-icon "now plus 1 year"
+	ExpiresByType image/ico "now plus 1 year"
+	ExpiresByType image/icon "now plus 1 year"
+	ExpiresByType text/ico "now plus 1 year"
+	ExpiresByType application/ico "now plus 1 year"
+	ExpiresByType image/vnd.wap.wbmp "now plus 1 year"
+	ExpiresByType application/vnd.wap.wbxml "now plus 1 year"
+	ExpiresByType application/smil "now plus 1 year"
+
+	# Audio files expiration: 1 year after request
+	ExpiresByType audio/basic "now plus 1 year"
+	ExpiresByType audio/mid "now plus 1 year"
+	ExpiresByType audio/midi "now plus 1 year"
+	ExpiresByType audio/mpeg "now plus 1 year"
+	ExpiresByType audio/x-aiff "now plus 1 year"
+	ExpiresByType audio/x-mpegurl "now plus 1 year"
+	ExpiresByType audio/x-pn-realaudio "now plus 1 year"
+	ExpiresByType audio/x-wav "now plus 1 year"
+
+	# Movie files expiration: 1 year after request
+	ExpiresByType application/x-shockwave-flash "now plus 1 year"
+	ExpiresByType x-world/x-vrml "now plus 1 year"
+	ExpiresByType video/x-msvideo "now plus 1 year"
+	ExpiresByType video/mpeg "now plus 1 year"
+	ExpiresByType video/mp4 "now plus 1 year"
+	ExpiresByType video/quicktime "now plus 1 year"
+	ExpiresByType video/x-la-asf "now plus 1 year"
+	ExpiresByType video/x-ms-asf "now plus 1 year"
+</IfModule>
+###########################################
